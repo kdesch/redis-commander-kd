@@ -45,7 +45,7 @@
   "engines": {
     "node": ">=6.0"
   },
-  "bin": {
+  "start": {
     "redis-commander": "./bin/redis-commander.js"
   },
   "preferGlobal": true

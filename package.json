@@ -47,7 +47,7 @@
   },
   "scripts": {
     "start": {
-      "redis-commander": "./bin/redis-commander.js"
+      "node ./bin/redis-commander.js"
     }
   },
   "preferGlobal": true

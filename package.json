@@ -20,9 +20,7 @@
     "redis-node"
   ],
   "scripts": {
-    "start": {
-      "redis-commander": "node ./bin/redis-commander.js"
-    }
+    "start": "node ./bin/redis-commander.js" 
   },
   "main": "lib/app.js",
   "dependencies": {

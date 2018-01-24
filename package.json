@@ -19,6 +19,11 @@
     "redis-gui",
     "redis-node"
   ],
+  "scripts": {
+    "start": {
+      "redis-commander": "node ./bin/redis-commander.js"
+    }
+  },
   "main": "lib/app.js",
   "dependencies": {
     "async": "0.1.22",
@@ -44,11 +49,6 @@
   "devDependencies": {},
   "engines": {
     "node": ">=6.0"
-  },
-  "scripts": {
-    "start": {
-      "node ./bin/redis-commander.js"
-    }
   },
   "preferGlobal": true
 }

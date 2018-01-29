@@ -66,7 +66,7 @@ var args = optimist
     alias: 'p',
     string: true,
     describe: 'The port to run the server on.',
-    default: 8081
+    default: 80
   })
   .options('nosave', {
     alias: 'ns',
@@ -134,12 +134,13 @@ myUtils.getConfig(function (err, config) {
 
       newDefault = {
         "label": args['redis-label'] || "local",
-        "host": args['redis-host'] || "localhost",
+        "host": args['redis-host'] || "redis-kd.dbaas.svc",
         "sentinel_host": args['sentinel-host'],
         "sentinel_port": args['sentinel-port'],
         "port": args['redis-port'] || args['redis-socket'] || "6379",
-        "dbIndex": db,
-        "password": args['redis-password'] || '',
+        "dbIndex": 0,
+#        "password": args['redis-password'] || '',
+        "password": 'redis'
       };
 
       if (!myUtils.containsConnection(config.default_connections, newDefault)) {

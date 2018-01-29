@@ -139,7 +139,6 @@ myUtils.getConfig(function (err, config) {
         "sentinel_port": args['sentinel-port'],
         "port": args['redis-port'] || args['redis-socket'] || "6379",
         "dbIndex": 0,
-#        "password": args['redis-password'] || '',
         "password": 'redis'
       };
 
